@@ -13,32 +13,32 @@
     <div class="container mt-5">
         <form>
             <div class="row g-3">
-                <div>
+                <div class="col-4">
                     <label for="fullName">Full Name</label>
-                    <input type="text" id="fullName">
+                    <input type="text" class="form-control" id="fullName">
                 </div>
 
                 <!-- Email -->
-                <div>
+                <div class="col-4">
                     <label for="email">Email address</label>
-                    <input type="email" id="email">
+                    <input type="email" class="form-control" id="email">
                 </div>
 
                 <!-- Gender -->
-                <div>
-                    <label>Gender</label>
-                    <div>
-                        <input type="radio" name="gender" id="male" value="male">
-                        <label for="male">Male</label>
+                <div class="col-4 mb-3">
+                    <label class="form-label">Gender</label>
+                    <div class="form-check d-inline-block mb-3">
+                        <input type="radio" class="form-check-input" name="gender" id="male" value="male">
+                        <label for="male" class="form-check-input">Male</label>
                     </div>
-                    <div>
-                        <input type="radio" name="gender" id="female" value="female">
-                        <label for="female">Female</label>
+                    <div class="form-check d-inline-block mb-3">
+                        <input type="radio" class="form-check-input" name="gender" id="female" value="female">
+                        <label for="female" class="form-check-input">Female</label>
                     </div>
                 </div>
 
                 <!-- Country -->
-                <div>
+                <div class="col">
                     <label for="country">Country</label>
                     <select id="country">
                         <option selected>Select your country</option>
@@ -49,9 +49,9 @@
                 </div>
 
                 <!-- Subscribe -->
-                <div>
+                <div class='row justify-content-center'>
                     <div class="mt-4">
-                        <input type="checkbox" id="subscribe">
+                        <input type="checkbox" class="form-control" id="subscribe">
                         <label for="subscribe">
                             Subscribe to newsletter
                         </label>
